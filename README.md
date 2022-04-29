@@ -66,28 +66,30 @@ Follow the instructions below to run the script provided in this project :
 To run script.h you just need to execute the following instruction : 
 * ```./script.sh```
 
+***Note:*** You'll have to provide  the absolute or a relative path to the halide folder that contains include and bin/src folders :
+* I have build halid in ./Halide/build, so I'll provide the following absolute path : /home/sofiane/HALIDE-11/Halide/build
+* If I want to execute this script using the latest version of Halide (using binaries, for the reasons mentioned above) I'll provide the following absolute path : /home/sofiane/Halide-11.0.1-x86-64-linux
+
 If everything goes well, you should obtain the following result :   
 ```
 Please provide the absolute or a relative path to the halide folder that contains include and bin/src folders: /home/sofiane/HALIDE-11/Halide/build
 Deleting ./data/result.txt if it exists
 [sudo] Mot de passe de sofiane : 
-**********************************
-Compiling g./code/gemm_halide.cpp...
-**********************************
+***********************************
+Compiling ./code/gemm_halide.cpp...
+***********************************
 Compiling ./code/gemm_c.c...
-**********************************
-Executing ./bin/gemm_halide
+***********************************
+Executing ./bin/gemm_halide...
 Matrix calculation with Halid
 Matrix calculation with Halid completed successfully
 Saving the result matrix into : ./data/result_matrix.txt 
 Saving process completed successfully
-**********************************
-Executing./bin/gemm_c
+***********************************
+Executing ./bin/gemm_c...
 Cechking process using C program
 Cechking process completed successfully
 The GEMM function implemented in Halide works correctly !
-**********************************
+***********************************
 ```
-
-
 

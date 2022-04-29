@@ -78,11 +78,11 @@ int main(int argc, char **argv)
     //Now we'll add a definition for our Func object. Each element (x,y) of the result matrix recieve : alpha * sum(A(x, d) * B(d,k)) + beta * C(x,y);  
     gemm(x,y) = alpha * sum(A(k, y) * B(x,k)) + beta * C(x,y);
 
-    printf("Matrix calculation with Halid\n");
+    printf("Matrix calculation with Halide\n");
     // Realizing the function
     Buffer<int> result_matrix = gemm.realize({B.width(), A.height()});
 
-    printf("Matrix calculation with Halid completed successfully\n");
+    printf("Matrix calculation with Halide completed successfully\n");
 
     // Save the result in a file to verify its correctness with a C program 
     printf("Saving the result matrix into : ./data/result_matrix.txt \n");

@@ -1,6 +1,6 @@
 # xGEMM_Halide
 
-This project implements a BLAS (Basic Linear Algebra Subprograms) BLAS routine using C and Halide and comparing the results provided by each program.  
+This project implements a BLAS (Basic Linear Algebra Subprograms) BLAS routine using Halide and C, and compares the results provided by each program.  
 Basic Linear Algebra Subprograms (BLAS) is a specification that prescribes a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication.
 
 ## The BLAS function choiced

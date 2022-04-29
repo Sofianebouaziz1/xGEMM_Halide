@@ -20,7 +20,7 @@ Installing a program "from source" means installing a program without using a pa
 - Install it in a location you wish.
 - In case of some software you may provide your hardware specific info for a suitable installation.
 
-## Acquiring and building LLVM 
+### Acquiring and building LLVM 
 Building Halide requires a stable version of LLVM.  
 ***Note:*** I first tried to build llvm15, llvm14, llvm13 and llvm12. But in the four installations, I always had the same error which is the following:
  ```

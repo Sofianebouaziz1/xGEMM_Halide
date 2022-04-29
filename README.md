@@ -41,7 +41,8 @@ After installing llvm 11.0.0 no errors were detected.
 
 Above, the instructions that allowed me to acquiring & building LLVM :  
 *  ```git clone --depth 1 --branch llvmorg-11.0.0 https://github.com/llvm/llvm-project.git```
-*   ``` cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" \
+*   ``` 
+              cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" \
               -DLLVM_TARGETS_TO_BUILD="X86;ARM;NVPTX;AArch64;Mips;Hexagon" -DLLVM_ENABLE_TERMINFO=OFF \
               -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_BUILD_32_BITS=OFF -S llvm-project/llvm -B llvm-build  
     ```

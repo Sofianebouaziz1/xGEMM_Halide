@@ -70,18 +70,20 @@ If everything goes well, you should obtain the following result :
 ```
 Please provide the absolute or a relative path to the halide folder that contains include and bin/src folders: /home/sofiane/HALIDE-11/Halide/build
 Deleting ./data/result.txt if it exists
+[sudo] Mot de passe de sofiane : 
 **********************************
 Compiling g./code/gemm_halide.cpp...
 **********************************
 Compiling ./code/gemm_c.c...
 **********************************
 Executing ./bin/gemm_halide
+Matrix calculation with Halid
 Matrix calculation with Halid completed successfully
-Saving the result matrix to ./data/result_matrix.txt 
+Saving the result matrix into : ./data/result_matrix.txt 
 Saving process completed successfully
 **********************************
 Executing./bin/gemm_c
-Cechking process completed successfully
+Cechking process using C program
 Cechking process completed successfully
 The GEMM function implemented in Halide works correctly !
 **********************************

@@ -62,7 +62,8 @@ I'll provide the instructions to acquire and build halide 11.0.1 since I have in
 Follow the instructions below to run the script provided in this project :
 * ```git clone https://github.com/Sofianebouaziz1/xGEMM_Halide.git```
 * ```cd xGEMM_Halide```
-* ```chmod +x script.sh```  
+* ```chmod +x script.sh```    
+
 To run script.h you just need to execute the following instruction : 
 * ```./script.sh```
 

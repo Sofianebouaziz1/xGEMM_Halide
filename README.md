@@ -19,3 +19,16 @@ Installing a program "from source" means installing a program without using a pa
 - Similarly you can add some features which may not be provided in the binary.
 - Install it in a location you wish.
 - In case of some software you may provide your hardware specific info for a suitable installation.
+
+## Acquiring & building LLVM 
+Building Halide requires a stable version of LLVM.  
+***Note:*** I first tried to build llvm15, llvm14, llvm13 and llvm12. But in the four installations, I always had the same error which is the following:
+ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../llvm-install \
+ -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" \
+ -DLLVM_TARGETS_TO_BUILD="X86;ARM;NVPTX;AArch64;Mips;Hexagon" \
+ -DLLVM_ENABLE_TERMINFO=OFF -DLLVM_ENABLE_ASSERTIONS=ON \
+ -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_BUILD_32_BITS=OFF \
+ ../llvm-project/llvm 
+
+
+

@@ -9,11 +9,11 @@ General Matrix Multiply (GEMM) is a common algorithm in linear algebra, machine 
 GEMM is defined as the operation C = αAB+βC , with A and B as matrix inputs, α and β as scalar inputs, and C as a pre-existing matrix which is overwritten by the output.  
 
 ## Installation of Halide in Linux
-I will give a detailed description of all the instructions that will allow you to install halide from sources.  
+I will give a detailed description of all the instructions that will allow the installation of halide from sources.  
 ### Why installing Halide from sources ?
 Installing a program "from source" means installing a program without using a package manager. You compile the source code and copy the binaries to your computer instead. 
 
-***Advantages of installing from source :***
+***Advantages of installing from sources :***
 - You can install the latest version and can always stay updated, whether it be a security patch or a new feature.
 - Allows you to trim down the features while installing so as to suit your needs.
 - Similarly you can add some features which may not be provided in the binary.

@@ -106,6 +106,7 @@ int main(int argc, char **argv)
     // Printing the result
     if (failure == 0) printf("The GEMM function implemented in Halide works correctly !\n");
     else printf("There are some problems with the Halid implementation because the resulting matrix is not the same in the two programs !\n");
+    
     fclose(file);
     
     return 0;

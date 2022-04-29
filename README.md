@@ -20,7 +20,7 @@ Installing a program "from source" means installing a program without using a pa
 - Install it in a location you wish.
 - In case of some software you may provide your hardware specific info for a suitable installation.
 
-## Acquiring & building LLVM 
+## Acquiring and building LLVM 
 Building Halide requires a stable version of LLVM.  
 ***Note:*** I first tried to build llvm15, llvm14, llvm13 and llvm12. But in the four installations, I always had the same error which is the following:
  ```
@@ -44,14 +44,16 @@ Above, the instructions that allowed me to acquiring & building LLVM 11.0.0 :
 * ``` 
   cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" \
         -DLLVM_TARGETS_TO_BUILD="X86;ARM;NVPTX;AArch64;Mips;Hexagon" -DLLVM_ENABLE_TERMINFO=OFF \
-        -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_BUILD_32_BITS=OFF -S llvm-project/llvm -B llvm-build  
+        -DLLVM_ENABLE_ASSERTIONS=ON -DLLVM_ENABLE_EH=ON -DLLVM_ENABLE_RTTI=ON -DLLVM_BUILD_32_BITS=OFF\
+        -S llvm-project/llvm -B llvm-build  
    ```
-* cmake --build llvm-build
-* cmake --install llvm-build --prefix llvm-install
-* export LLVM_ROOT=$PWD/llvm-install
-* export LLVM_CONFIG=$LLVM_ROOT/bin/llvm-config
+* ```cmake --build llvm-build```
+* ```cmake --install llvm-build --prefix llvm-install```
+* ```export LLVM_ROOT=$PWD/llvm-install```
+* ```export LLVM_CONFIG=$LLVM_ROOT/bin/llvm-config```
 
-
+### Acquiring and building Halide
+We will install in the following halide 11.0.1 since we have installed before the version 11.0.0 of
 
 
 

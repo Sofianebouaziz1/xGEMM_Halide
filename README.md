@@ -81,8 +81,8 @@ Compiling ./code/gemm_halide.cpp...
 Compiling ./code/gemm_c.c...
 ***********************************
 Executing ./bin/gemm_halide...
-Matrix calculation with Halid
-Matrix calculation with Halid completed successfully
+Matrix calculation with Halide
+Matrix calculation with Halide completed successfully
 Saving the result matrix into : ./data/result_matrix.txt 
 Saving process completed successfully
 ***********************************

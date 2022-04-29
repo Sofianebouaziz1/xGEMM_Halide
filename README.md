@@ -37,7 +37,7 @@ make: *** [Makefile:152: all] Error 2
  ```
 I contacted a few contributors, they told me that these versions require a lot of memory (16 gb of RAM at least and 32gb is preferable) but I have a laptop with 8 gb of RAM.   
 I then tried to install llvm 11.0.0 since this version does not require much memory space and is compatible with the capabilities of my computer. 
-After installing llvm 11.0.0 no errors were detected.  
+After installing llvm 11.0.0 no errors were detected and the installation was successful.
 
 Below, the instructions that allowed me to acquiring & building LLVM 11.0.0 :  
 *  ```git clone --depth 1 --branch llvmorg-11.0.0 https://github.com/llvm/llvm-project.git```

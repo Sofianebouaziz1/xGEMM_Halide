@@ -39,7 +39,7 @@ I contacted a few contributors, they told me that these versions require a lot o
 I then tried to install llvm 11.0.0 since this version does not require much memory space and is compatible with the capabilities of my computer. 
 After installing llvm 11.0.0 no errors were detected.  
 
-Above, the instructions that allowed me to acquiring & building LLVM 11.0.0 :  
+Below, the instructions that allowed me to acquiring & building LLVM 11.0.0 :  
 *  ```git clone --depth 1 --branch llvmorg-11.0.0 https://github.com/llvm/llvm-project.git```
 * ``` 
   cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_PROJECTS="clang;lld;clang-tools-extra" \
@@ -53,7 +53,39 @@ Above, the instructions that allowed me to acquiring & building LLVM 11.0.0 :
 * ```export LLVM_CONFIG=$LLVM_ROOT/bin/llvm-config```
 
 ### Acquiring and building Halide
-We will install in the following halide 11.0.1 since we have installed before the version 11.0.0 of
+I'll provide the instructions to acuire and build halide 11.0.1 since I have installed before the version 11.0.0 of llvm.  
+* ```git clone --branch v11.0.1 https://github.com/halide/Halide.git```
+* ```cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$LLVM_ROOT/lib/cmake/llvm -S . -B buill```
+* ```cmake --build build```
+
+## The execution of the script
+Follow the instructions below to run the script provided in this project :
+* ```git clone git@github.com:Sofianebouaziz1/xGEMM_Halide.git```
+* ```cd xGEMM_Halide```
+* ```chmod +x script.sh```
+To run script.h you just need to execute the following instruction : 
+* ```./script.sh```
+
+If everything goes well, you should obtain the following result :   
+```
+Please provide the absolute or a relative path to the halide folder that contains include and bin/src folders: /home/sofiane/HALIDE-11/Halide/build
+Deleting ./data/result.txt if it exists
+**********************************
+Compiling g./code/gemm_halide.cpp...
+**********************************
+Compiling ./code/gemm_c.c...
+**********************************
+Executing ./bin/gemm_halide
+Matrix calculation with Halid completed successfully
+Saving the result matrix to ./data/result_matrix.txt 
+Saving process completed successfully
+**********************************
+Executing./bin/gemm_c
+Cechking process completed successfully
+Cechking process completed successfully
+The GEMM function implemented in Halide works correctly !
+**********************************
+```
 
 
 

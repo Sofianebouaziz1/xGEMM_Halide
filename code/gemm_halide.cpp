@@ -75,7 +75,7 @@ int main(int argc, char **argv)
     // Declaration of a reduction domain (i takes the values from 0 to the number of columns of the matrix B - 1 (k-1))
     RDom k(0, A.width());
 
-    //Now we'll add a definition for our Func object. Each element (x,y) of the result matrix recieve : alpha * sum(A(x, d) * B(d,k)) + beta * C(x,y);  
+    //Now we'll add a definition for our Func object. Each element (x,y) of the result matrix recieve : alpha * sum(A(k, y) * B(x,k)) + beta * C(x,y);  
     gemm(x,y) = alpha * sum(A(k, y) * B(x,k)) + beta * C(x,y);
 
     printf("Matrix calculation with Halide\n");

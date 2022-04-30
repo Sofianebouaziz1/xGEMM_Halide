@@ -15,7 +15,7 @@ gcc ./code/gemm_c.c -o ./bin/gemm_c
 echo "***********************************"
 
 echo "Executing ./bin/gemm_halide..."
-LD_LIBRARY_PATH=${path}/src  ./bin/gemm_halide
+LD_LIBRARY_PATH=${path}/lib  ./bin/gemm_halide
 
 
 echo "***********************************"

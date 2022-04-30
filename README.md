@@ -74,7 +74,7 @@ To run script.h you just need to execute the following instruction :
 If everything goes well, you should obtain the following result :   
 ```
 Please provide the absolute or a relative path to the halide folder that contains include and lib folders: /home/sofiane/HALIDE-11/Halide/build
-Deleting ./data/result.txt if it exists
+Deleting ./data/result_matrix.txt if it exists
 [sudo] Mot de passe de sofiane : 
 ***********************************
 Compiling ./code/gemm_halide.cpp...

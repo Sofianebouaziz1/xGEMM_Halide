@@ -1,6 +1,6 @@
 read -p "Please provide the absolute or a relative path to the halide folder that contains include and lib folders: " path
 echo "Deleting ./data/result.txt if it exists"
-sudo rm -f ./result/result.txt
+sudo rm -f ./result/result_matrix.txt
 
 echo "***********************************"
 

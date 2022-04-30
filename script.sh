@@ -1,11 +1,11 @@
-read -p "Please provide the absolute or a relative path to the halide folder that contains include and bin/src folders: " path
+read -p "Please provide the absolute or a relative path to the halide folder that contains include and lib folders: " path
 echo "Deleting ./data/result.txt if it exists"
 sudo rm -f ./result/result.txt
 
 echo "***********************************"
 
 echo "Compiling ./code/gemm_halide.cpp..."
-g++ ./code/gemm_halide.cpp -g -I ${path}/include -L ${path}/src -I ${path}/tools  -lHalide -o ./bin/gemm_halide -std=c++17
+g++ ./code/gemm_halide.cpp -g -I ${path}/include -L ${path}/lib -I ${path}/tools  -lHalide -o ./bin/gemm_halide -std=c++17
 
 echo "***********************************"
 

@@ -68,12 +68,12 @@ To run script.h you just need to execute the following instruction :
 * ```./script.sh```
 
 ***Note:*** You'll have to provide  the absolute or a relative path to the halide folder that contains include and lib folders :
-* I have build Halide in ./Halide/build, (I had to change the name of the src folder to lib) so I'll provide the following absolute path : ```/home/sofiane/HALIDE-11/Halide/build```
+* I have build Halide in ./Halide/build, (I had to change the name of the src folder to lib, in order to have the same name as the new version of Halide) so I'll provide the following absolute path : ```/home/sofiane/HALIDE-11/Halide/build```
 * If I want to execute this script using the latest version of Halide (using binaries, for the reasons mentioned above) I'll provide the following absolute path : ```/home/sofiane/Halide-14.0.0-x86-64-linux```
 
 If everything goes well, you should obtain the following result :   
 ```
-Please provide the absolute or a relative path to the halide folder that contains include and bin/src folders: /home/sofiane/HALIDE-11/Halide/build
+Please provide the absolute or a relative path to the halide folder that contains include and lib folders: /home/sofiane/HALIDE-11/Halide/build
 Deleting ./data/result.txt if it exists
 [sudo] Mot de passe de sofiane : 
 ***********************************

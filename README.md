@@ -55,7 +55,7 @@ Below, the instructions that allowed me acquiring & building LLVM 11.0.0 :
 ### Acquiring and building Halide
 I'll provide the instructions to acquire and build halide 11.0.1 since I have installed before the version 11.0.0 of llvm.  
 * ```git clone --branch v11.0.1 https://github.com/halide/Halide.git```
-* ```cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$LLVM_ROOT/lib/cmake/llvm -S . -B buill```
+* ```cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$LLVM_ROOT/lib/cmake/llvm -S . -B build```
 * ```cmake --build build```
 
 ## The execution of the script
